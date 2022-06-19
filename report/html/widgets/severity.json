@@ -1,0 +1,41 @@
+[ {
+  "uid" : "2f4b27722d4ff62b",
+  "name" : "test_get_attendance_record[考勤台账管理员列表]",
+  "time" : {
+    "start" : 1655632817943,
+    "stop" : 1655632818469,
+    "duration" : 526
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "98cec34485e89f6d",
+  "name" : "test_login[正常登录]",
+  "time" : {
+    "start" : 1655632818476,
+    "stop" : 1655632818757,
+    "duration" : 281
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a73594d251769c",
+  "name" : "test_login[账号不存在登录]",
+  "time" : {
+    "start" : 1655632819005,
+    "stop" : 1655632819212,
+    "duration" : 207
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "b48101f4735bc9b3",
+  "name" : "test_login[密码错误登录]",
+  "time" : {
+    "start" : 1655632818764,
+    "stop" : 1655632818997,
+    "duration" : 233
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

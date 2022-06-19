@@ -12,6 +12,10 @@ from utils.noticUtils.feishuControl import FeiShuTalkChatBot
 from utils.readFilesUtils.caseAutomaticControl import TestCaseAutomaticGeneration
 from utils.otherUtils.allureDate.error_case_excel import ErrorCaseExcel
 
+import sys
+
+sys.path.append('..')
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir)))
 
 def run():
     # 从配置文件中获取项目名称
