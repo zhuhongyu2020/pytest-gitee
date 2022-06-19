@@ -3,21 +3,9 @@
 
 本框架主要是基于 Python + pytest + allure + log + yaml + mysql + redis + 钉钉通知 + Jenkins 实现的接口自动化框架。
 
-* git地址: [https://gitee.com/yu_xiao_qi/pytest-auto-api2](https://gitee.com/yu_xiao_qi/pytest-auto-api2)
-* 项目参与者: 余少琪
-* 技术支持邮箱: 1603453211@qq.com
-* 个人博客地址:  [https://blog.csdn.net/weixin_43865008](https://blog.csdn.net/weixin_43865008)
-
-如果对您有帮助，请点亮 小星星 以表支持，谢谢
-
-![img.png](Files/image/starts.png)
-
 ## 前言
 
-公司突然要求你做自动化，但是没有代码基础不知道怎么做？或者有自动化基础，但是不知道如何系统性的做自动化，
-放在yaml文件中维护，不知道如何处理多业务依赖的逻辑？
 
-那么这里 Gitte 中开源的自动化框架，将为你解决这些问题。
 框架主要使用 python 语言编写，结合 pytest 进行二次开发，用户仅需要在 yaml 文件中编写测试用例，
 编写成功之后，会自动生成 pytest 的代码，零基础代码小白，也可以操作。
 
@@ -37,14 +25,6 @@
 * 钉钉、企业微信通知: 支持多种通知场景，执行成功之后，可选择发送钉钉、或者企业微信、邮箱通知
 * 自定义拓展字段: 如用例中需要生成的随机数据，可直接调用
 * 多线程执行
-
-## 联系方式
-
-因为微信群二维码，有效期只有15天，如果有遇到的问题的同学，可以先加微信：being_chaoren
-
-加微信的朋友，需备注是从Gitee上看到的加的好友，加上之后，会将你们拉入一个自动化测试微信交流群
-
-![img.png](Files/image/wechat.png)
 
 ## 目录结构
 
@@ -101,7 +81,7 @@
     ├── Readme.md                       // help
     ├── pytest.ini                  
     ├── run.py                           // 运行入口  
-    
+
 
 ## 依赖库
 
@@ -154,13 +134,6 @@
 如上环境如都搭建好，则安装本框架的所有第三方库依赖，执行如下命令
 
     pip install -r requirements.txt
-
-## 接口文档
-
-这里非常感谢一位安卓的朋友，给我推荐了开源的接口文件，框架中会针对开源接口中的登录、个人信息、收藏（新增、查看、修改、删除）等功能，编写结果自动化案例
-下方是接口文档地址，大家可以自行查看（因为开源的接口，里面有些逻辑性的功能，如修改被删除的网址接口并没有过多的做判断，
-因此用例中只写了一些基础的场景，仅供大家参考。）
-[https://wanandroid.com/blog/show/2](https://wanandroid.com/blog/show/2)
 
 ## 如何创建用例
 
@@ -266,7 +239,7 @@ get请求我们 requestType 写的是 params ，这样发送请求时，我们�
             value: 0
             AssertType:
         sql:
-            
+
 这里post请求，我们需要请求的数据格式是json格式的，那么requestType 则填写为json格式。
 包括 PUT/DELETE/HEAD 请求的数据格式都是一样的，唯一不同的就是需要配置 reuqestType，
 如果需要请求的参数是json格式，则requestType我们就填写json，如果是url拼接的形式，我们就填写 params
@@ -682,14 +655,6 @@ get请求我们 requestType 写的是 params ，这样发送请求时，我们�
 
 ![img.png](Files/image/write_test_case.png)
 
-### 发送钉钉通知通知
-
-![img.png](Files/image/dingding.png)
-
-### 发送企业微信通知
-
-![img.png](Files/image/wechart.png)
-
 ### 日志打印装饰器
 
 ![img.png](Files/image/log.png)
@@ -713,30 +678,4 @@ get请求我们 requestType 写的是 params ，这样发送请求时，我们�
 ![img.png](Files/image/allure.png)
 
 ![img.png](Files/image/allure2.png)
-
-### 其他
-
-本框架为2.0升级版本，升级之后的功能，现在基本上都是在yaml中维护用例，无需测试人员编写代码，
-和 1.0版本的区别在于，1.0版本还需要测试人员手动编写多业务逻辑的代码，需要有一定基础编码的能力
-
-但是1.0版本，同样也可以自动生成代码，yaml中维护数据，对相对简单，如果偏于yaml简单维护的同学，可以切换查看1.0分支
-下方是1.0分支的操作文档：[点我查看](https://blog.csdn.net/weixin_43865008/article/details/121903028?spm=1001.2014.3001.5502)
-
-*******************************************************
-
-以上便是整个框架的使用说明，这个框架属于个人业余时间开发，大家如果在使用中遇到什么问题，或者有相关建议，可以随时反馈给我，
-_框架内容会随着大家的反馈，持续更新！邮箱地址：1602343211@qq.com
-
-如果觉得框架有帮助到你，麻烦收藏一下哦~~谢谢。:)
-
-## 版本更新记录
-* V2.0.0(2022-04-07)
-  [重构] 新增多业务逻辑依赖处理，统一改成yaml文件中维护用例，无需编写代码，基于V1.0版本进行重构
-* [查看更多记录点此查看](https://gitee.com/yu_xiao_qi/pytest-auto-api2/wikis/Home)
-
-## 赞赏
-
-如果这个库有帮助到你并且你很想支持库的后续开发和维护，那么你可以扫描下方二维码随意打赏我，我将不胜感激
-
-![img_1.png](Files/image/img_1.png)  ![img_1.png](Files/image/weixin_pay.png)
 
