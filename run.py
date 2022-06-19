@@ -14,8 +14,7 @@ from utils.otherUtils.allureDate.error_case_excel import ErrorCaseExcel
 
 import sys
 
-sys.path.append('..')
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir)))
+sys.path.append(os.path.split(os.path.abspath(os.path.dirname(__file__)))[0])
 
 def run():
     # 从配置文件中获取项目名称

@@ -4,10 +4,10 @@
     "uid" : "1d8c554ba39a1c21213d689d909e4905",
     "name" : "云业务平台接口",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
       "total" : 2
     }

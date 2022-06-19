@@ -1,40 +1,40 @@
 [ {
-  "uid" : "2f4b27722d4ff62b",
-  "name" : "test_get_attendance_record[考勤台账管理员列表]",
+  "uid" : "498709b888aedd32",
+  "name" : "test_login[账号不存在登录]",
   "time" : {
-    "start" : 1655632817943,
-    "stop" : 1655632818469,
-    "duration" : 526
+    "start" : 1655632988979,
+    "stop" : 1655632989109,
+    "duration" : 130
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "98cec34485e89f6d",
+  "uid" : "727b7d3b2532ee4e",
+  "name" : "test_login[密码错误登录]",
+  "time" : {
+    "start" : 1655632988745,
+    "stop" : 1655632988973,
+    "duration" : 228
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8822c897ee35b431",
   "name" : "test_login[正常登录]",
   "time" : {
-    "start" : 1655632818476,
-    "stop" : 1655632818757,
+    "start" : 1655632988455,
+    "stop" : 1655632988736,
     "duration" : 281
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "7a73594d251769c",
-  "name" : "test_login[账号不存在登录]",
+  "uid" : "221c9efb8129375a",
+  "name" : "test_get_attendance_record[考勤台账管理员列表]",
   "time" : {
-    "start" : 1655632819005,
-    "stop" : 1655632819212,
-    "duration" : 207
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "b48101f4735bc9b3",
-  "name" : "test_login[密码错误登录]",
-  "time" : {
-    "start" : 1655632818764,
-    "stop" : 1655632818997,
-    "duration" : 233
+    "start" : 1655632987948,
+    "stop" : 1655632988449,
+    "duration" : 501
   },
   "status" : "passed",
   "severity" : "normal"

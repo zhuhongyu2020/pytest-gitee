@@ -1,26 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ {
-    "name" : "Product defects",
-    "children" : [ {
-      "name" : "AssertionError",
-      "children" : [ {
-        "name" : "test_login[账号不存在登录]",
-        "uid" : "7a73594d251769c",
-        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
-        "status" : "failed",
-        "time" : {
-          "start" : 1655632819005,
-          "stop" : 1655632819212,
-          "duration" : 207
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'method': 'POST', 'is_run': None, 'url': 'https://aecloud-test.glodon.com/identification/users/verify', 'detail': '账号不存在登录', 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'account': 'zhuhongyu', 'password': '123qwe!@#', 'tenantId': '', 'type': 'password', 'verifyCode': ''}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'success': {'jsonpath': '$.success', 'type': '==', 'value': False, 'AssertType': None}, 'errorMsg': {'jsonpath': '$.errorMsg', 'type': '==', 'value': '图形验证码不能为空。', 'AssertType': None}, 'errorCode': {'jsonpath': '$.errorCode', 'type': '==', 'value': 2114, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None, 'sleep': None, 'response_cache': None}" ]
-      } ],
-      "uid" : "a0017ad855102fea08b8682d27fec4ca"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  } ]
+  "children" : [ ]
 }
