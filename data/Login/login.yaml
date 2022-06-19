@@ -1,0 +1,138 @@
+# 公共参数
+case_common:
+  allureEpic: 云业务平台接口
+  allureFeature: 登录模块
+  allureStory: 登录
+
+login_01:
+  host: ${{host}}
+  url: /identification/users/verify
+  method: POST
+  detail: 正常登录
+  headers:
+    Content-Type: application/json;charset=UTF-8
+  # 请求的数据，是 params 还是 json、或者file、date
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+    {
+      "account": "zhuhy@ZHENGLJ",
+      "password": "123qwe!@#",
+      "tenantId": "",
+      "type": "password",
+      "verifyCode": ""
+    }
+  # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: False
+  # 依赖的数据
+  dependence_case_data:
+  assert:
+    # 断言接口返回的success
+    success:
+      jsonpath: $.success
+      type: ==
+      value: true
+      AssertType:
+    # 断言接口返回的errorMsg
+    errorMsg:
+      jsonpath: $.errorMsg
+      type: ==
+      value: null
+      AssertType:
+    # 断言接口返回的errorCode
+    errorCode:
+      jsonpath: $.errorCode
+      type: ==
+      value: 0
+      AssertType:
+
+  sql:
+login_02:
+  host: ${{host}}
+  url: /identification/users/verify
+  method: POST
+  detail: 密码错误登录
+  headers:
+    Content-Type: application/json;charset=UTF-8
+  # 请求的数据，是 params 还是 json、或者file、date
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+    {
+      "account": "zhuhy@ZHENGLJ",
+      "password": "123",
+      "tenantId": "",
+      "type": "password",
+      "verifyCode": ""
+    }
+  # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: False
+  # 依赖的数据
+  dependence_case_data:
+  assert:
+    # 断言接口返回的success
+    success:
+      jsonpath: $.success
+      type: ==
+      value: false
+      AssertType:
+    # 断言接口返回的errorMsg
+    errorMsg:
+      jsonpath: $.errorMsg
+      type: ==
+      value: "账号或密码错误"
+      AssertType:
+    # 断言接口返回的errorCode
+    errorCode:
+      jsonpath: $.errorCode
+      type: ==
+      value: 2110
+      AssertType:
+
+  sql:
+login_03:
+  host: ${{host}}
+  url: /identification/users/verify
+  method: POST
+  detail: 账号不存在登录
+  headers:
+    Content-Type: application/json;charset=UTF-8
+  # 请求的数据，是 params 还是 json、或者file、date
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+    {
+      "account": "zhuhongyu",
+      "password": "123qwe!@#",
+      "tenantId": "",
+      "type": "password",
+      "verifyCode": ""
+    }
+  # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: False
+  # 依赖的数据
+  dependence_case_data:
+  assert:
+    # 断言接口返回的success
+    success:
+      jsonpath: $.success
+      type: ==
+      value: false
+      AssertType:
+    # 断言接口返回的errorMsg
+    errorMsg:
+      jsonpath: $.errorMsg
+      type: ==
+      value: "图形验证码不能为空。"
+      AssertType:
+    # 断言接口返回的errorCode
+    errorCode:
+      jsonpath: $.errorCode
+      type: ==
+      value: 2114
+      AssertType:
+
+  sql:

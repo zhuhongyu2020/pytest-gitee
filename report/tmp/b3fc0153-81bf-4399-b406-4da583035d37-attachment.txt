@@ -1,0 +1,13 @@
+INFO     D:\PyProject\pytest-gitee\logs\info.log:logDecoratorl.py:32 
+=================================================================================
+测试标题: 账号不存在登录
+请求方式: POST
+请求头:   {'Content-Type': 'application/json;charset=UTF-8'}
+请求路径: https://aecloud-test.glodon.com/identification/users/verify
+请求内容: {'account': 'zhuhongyu', 'password': '123qwe!@#', 'tenantId': '', 'type': 'password', 'verifyCode': ''}
+依赖测试用例: 暂无依赖用例数据
+接口响应内容: {'success': False, 'data': None, 'errorMsg': '图形验证码不能为空。', 'message': None, 'errorCode': 2114}
+接口响应时长: 152.364 ms
+Http状态码: 500
+数据库断言数据: {'sql': None}
+=================================================================================
