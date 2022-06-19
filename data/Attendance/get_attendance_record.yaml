@@ -1,0 +1,70 @@
+# 公共参数
+case_common:
+  allureEpic: 云业务平台接口
+  allureFeature: 考勤管理模块
+  allureStory: 考勤台账-管理员
+
+get_attence_record:
+  host: ${{host}}
+  url: /linkapps/gateway-server/cloud-attendence-backend-api/attendanceRecord/adminSummary
+  method: POST
+  detail: 考勤台账管理员列表
+  headers:
+    token: work_login_init
+    Content-Type: application/json;charset=UTF-8
+  # 请求的数据，是 params 还是 json、或者file、date
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+    {
+      "asc": false,
+      "propName": null,
+      "belongDeptId": null,
+      "belongDeptName": null,
+      "userId": null,
+      "userName": null,
+      "attendanceDate": [
+          "2022-06-01",
+          "2022-06-30"
+      ],
+      "fromTime": "2022-06-01",
+      "toTime": "2022-06-30",
+      "currentPage": 1,
+      "pageSize": 10,
+      "attendanceResult": null,
+      "absenceStatus": null,
+      "lateStatus": null,
+      "leaveEarlyStatus": null,
+      "leaveStatus": null,
+      "missingClockStatus": null
+    }
+  # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: false
+  # 依赖的数据
+  dependence_case_data:
+    case_id: login_01
+    dependent_type: response
+    jsonpath: $.data.[0].applyId
+    replace_key: $url_paran(good_id)
+  assert:
+    # 断言接口返回的ok
+    ok:
+      jsonpath: $.ok
+      type: ==
+      value: true
+      AssertType:
+    # 断言接口返回的code
+    code:
+      jsonpath: $.code
+      type: ==
+      value: "200"
+      AssertType:
+    # 断言接口返回的msg
+    msg:
+      jsonpath: $.msg
+      type: ==
+      value: "OK"
+      AssertType:
+
+  sql:
