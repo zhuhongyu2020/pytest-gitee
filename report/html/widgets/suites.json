@@ -5,9 +5,9 @@
     "name" : "test_case.Login",
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 2,
       "unknown" : 0,
       "total" : 3
     }

@@ -1,17 +1,17 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sun Jun 19 18:36:36 CST 2022","Sun Jun 19 18:36:37 CST 2022","500","test_case.Attendance","test_get_attendance_record","TestGetAttendanceRecord","","","test_get_attendance_record[考勤台账管理员列表]","
+"passed","Mon Jun 20 08:55:26 CST 2022","Mon Jun 20 08:55:26 CST 2022","428","test_case.Login","test_login","TestLogin","","","test_login[密码错误登录]","
         :param :
         :return:
         "
-"passed","Sun Jun 19 18:36:37 CST 2022","Sun Jun 19 18:36:37 CST 2022","269","test_case.Login","test_login","TestLogin","","","test_login[密码错误登录]","
+"passed","Mon Jun 20 08:55:25 CST 2022","Mon Jun 20 08:55:26 CST 2022","466","test_case.Login","test_login","TestLogin","","","test_login[正常登录]","
         :param :
         :return:
         "
-"passed","Sun Jun 19 18:36:37 CST 2022","Sun Jun 19 18:36:37 CST 2022","130","test_case.Login","test_login","TestLogin","","","test_login[账号不存在登录]","
+"broken","Mon Jun 20 08:55:26 CST 2022","Mon Jun 20 08:55:47 CST 2022","21030","test_case.Login","test_login","TestLogin","","","test_login[账号不存在登录]","
         :param :
         :return:
         "
-"passed","Sun Jun 19 18:36:37 CST 2022","Sun Jun 19 18:36:37 CST 2022","264","test_case.Login","test_login","TestLogin","","","test_login[正常登录]","
+"passed","Mon Jun 20 08:55:24 CST 2022","Mon Jun 20 08:55:25 CST 2022","697","test_case.Attendance","test_get_attendance_record","TestGetAttendanceRecord","","","test_get_attendance_record[考勤台账管理员列表]","
         :param :
         :return:
         "

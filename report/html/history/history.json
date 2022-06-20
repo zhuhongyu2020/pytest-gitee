@@ -9,12 +9,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c7677bc866001c80",
+      "uid" : "9ce9d009656c3f50",
       "status" : "passed",
       "time" : {
-        "start" : 1655634996788,
-        "stop" : 1655634997288,
-        "duration" : 500
+        "start" : 1655686524983,
+        "stop" : 1655686525680,
+        "duration" : 697
       }
     } ]
   },
@@ -28,12 +28,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "83813e110ab71f3f",
+      "uid" : "ddbb6af310f784df",
       "status" : "passed",
       "time" : {
-        "start" : 1655634997295,
-        "stop" : 1655634997559,
-        "duration" : 264
+        "start" : 1655686525694,
+        "stop" : 1655686526160,
+        "duration" : 466
       }
     } ]
   },
@@ -47,31 +47,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7674fa8372990171",
+      "uid" : "3368d94f131cea60",
       "status" : "passed",
       "time" : {
-        "start" : 1655634997565,
-        "stop" : 1655634997834,
-        "duration" : 269
+        "start" : 1655686526173,
+        "stop" : 1655686526601,
+        "duration" : 428
       }
     } ]
   },
   "9f75771c7681a35ae662e0fc7e5a6ddb" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f4caac7a14300850",
-      "status" : "passed",
+      "uid" : "2a5ed3a0d22dfb10",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.ConnectionError: HTTPSConnectionPool(host='aecloud-test.glodon.com', port=443): Max retries exceeded with url: /identification/users/verify (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000254F32FF400>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。',))",
       "time" : {
-        "start" : 1655634997841,
-        "stop" : 1655634997971,
-        "duration" : 130
+        "start" : 1655686526614,
+        "stop" : 1655686547644,
+        "duration" : 21030
       }
     } ]
   }

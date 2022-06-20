@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "requests.exceptions.ConnectionError: HTTPSConnectionPool(host='aecloud-test.glodon.com', port=443): Max retries exceeded with url: /identification/users/verify (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000254F32FF400>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。',))",
+      "children" : [ {
+        "name" : "test_login[账号不存在登录]",
+        "uid" : "2a5ed3a0d22dfb10",
+        "parentUid" : "ef36a13c9fb317a426b6d52b2a1871b7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1655686526614,
+          "stop" : 1655686547644,
+          "duration" : 21030
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'method': 'POST', 'is_run': None, 'url': 'https://aecloud-test.glodon.com/identification/users/verify', 'detail': '账号不存在登录', 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'account': 'zhuhongyu', 'password': '123qwe!@#', 'tenantId': '', 'type': 'password', 'verifyCode': ''}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'success': {'jsonpath': '$.success', 'type': '==', 'value': False, 'AssertType': None}, 'errorMsg': {'jsonpath': '$.errorMsg', 'type': '==', 'value': '图形验证码不能为空。', 'AssertType': None}, 'errorCode': {'jsonpath': '$.errorCode', 'type': '==', 'value': 2114, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None, 'sleep': None, 'response_cache': None}" ]
+      } ],
+      "uid" : "ef36a13c9fb317a426b6d52b2a1871b7"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }

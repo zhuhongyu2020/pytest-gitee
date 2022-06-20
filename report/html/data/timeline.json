@@ -2,64 +2,64 @@
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "name" : "timeline",
   "children" : [ {
-    "name" : "ZHU",
+    "name" : "MS-OAXXGHHYOZXT",
     "children" : [ {
-      "name" : "19120-MainThread",
+      "name" : "7392-MainThread",
       "children" : [ {
-        "name" : "test_get_attendance_record[考勤台账管理员列表]",
-        "uid" : "c7677bc866001c80",
-        "parentUid" : "2ea1d3f92da5a0bb5efe064db1f37cfc",
+        "name" : "test_login[正常登录]",
+        "uid" : "ddbb6af310f784df",
+        "parentUid" : "eee5d5f55e27ed1dca6087144f735f99",
         "status" : "passed",
         "time" : {
-          "start" : 1655634996788,
-          "stop" : 1655634997288,
-          "duration" : 500
+          "start" : 1655686525694,
+          "stop" : 1655686526160,
+          "duration" : 466
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "{'method': 'POST', 'is_run': None, 'url': 'https://aecloud-test.glodon.com/linkapps/gateway-server/cloud-attendence-backend-api/attendanceRecord/adminSummary', 'detail': '考勤台账管理员列表', 'headers': {'token': 'work_login_init', 'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'asc': False, 'propName': None, 'belongDeptId': None, 'belongDeptName': None, 'userId': None, 'userName': None, 'attendanceDate': ['2022-06-01', '2022-06-30'], 'fromTime': '2022-06-01', 'toTime': '2022-06-30', 'currentPage': 1, 'pageSize': 10, 'attendanceResult': None, 'absenceStatus': None, 'lateStatus': None, 'leaveEarlyStatus': None, 'leaveStatus': None, 'missingClockStatus': None}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'ok': {'jsonpath': '$.ok', 'type': '==', 'value': True, 'AssertType': None}, 'code': {'jsonpath': '$.code', 'type': '==', 'value': '200', 'AssertType': None}, 'msg': {'jsonpath': '$.msg', 'type': '==', 'value': 'OK', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None, 'sleep': None, 'response_cache': None}" ]
-      }, {
-        "name" : "test_login[密码错误登录]",
-        "uid" : "7674fa8372990171",
-        "parentUid" : "2ea1d3f92da5a0bb5efe064db1f37cfc",
-        "status" : "passed",
-        "time" : {
-          "start" : 1655634997565,
-          "stop" : 1655634997834,
-          "duration" : 269
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'method': 'POST', 'is_run': None, 'url': 'https://aecloud-test.glodon.com/identification/users/verify', 'detail': '密码错误登录', 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'account': 'zhuhy@ZHENGLJ', 'password': '123', 'tenantId': '', 'type': 'password', 'verifyCode': ''}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'success': {'jsonpath': '$.success', 'type': '==', 'value': False, 'AssertType': None}, 'errorMsg': {'jsonpath': '$.errorMsg', 'type': '==', 'value': '账号或密码错误', 'AssertType': None}, 'errorCode': {'jsonpath': '$.errorCode', 'type': '==', 'value': 2110, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None, 'sleep': None, 'response_cache': None}" ]
+        "parameters" : [ "{'method': 'POST', 'is_run': None, 'url': 'https://aecloud-test.glodon.com/identification/users/verify', 'detail': '正常登录', 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'account': 'zhuhy@ZHENGLJ', 'password': '123qwe!@#', 'tenantId': '', 'type': 'password', 'verifyCode': ''}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}, 'errorMsg': {'jsonpath': '$.errorMsg', 'type': '==', 'value': None, 'AssertType': None}, 'errorCode': {'jsonpath': '$.errorCode', 'type': '==', 'value': 0, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None, 'sleep': None, 'response_cache': None}" ]
       }, {
         "name" : "test_login[账号不存在登录]",
-        "uid" : "f4caac7a14300850",
-        "parentUid" : "2ea1d3f92da5a0bb5efe064db1f37cfc",
-        "status" : "passed",
+        "uid" : "2a5ed3a0d22dfb10",
+        "parentUid" : "eee5d5f55e27ed1dca6087144f735f99",
+        "status" : "broken",
         "time" : {
-          "start" : 1655634997841,
-          "stop" : 1655634997971,
-          "duration" : 130
+          "start" : 1655686526614,
+          "stop" : 1655686547644,
+          "duration" : 21030
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'method': 'POST', 'is_run': None, 'url': 'https://aecloud-test.glodon.com/identification/users/verify', 'detail': '账号不存在登录', 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'account': 'zhuhongyu', 'password': '123qwe!@#', 'tenantId': '', 'type': 'password', 'verifyCode': ''}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'success': {'jsonpath': '$.success', 'type': '==', 'value': False, 'AssertType': None}, 'errorMsg': {'jsonpath': '$.errorMsg', 'type': '==', 'value': '图形验证码不能为空。', 'AssertType': None}, 'errorCode': {'jsonpath': '$.errorCode', 'type': '==', 'value': 2114, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None, 'sleep': None, 'response_cache': None}" ]
       }, {
-        "name" : "test_login[正常登录]",
-        "uid" : "83813e110ab71f3f",
-        "parentUid" : "2ea1d3f92da5a0bb5efe064db1f37cfc",
+        "name" : "test_login[密码错误登录]",
+        "uid" : "3368d94f131cea60",
+        "parentUid" : "eee5d5f55e27ed1dca6087144f735f99",
         "status" : "passed",
         "time" : {
-          "start" : 1655634997295,
-          "stop" : 1655634997559,
-          "duration" : 264
+          "start" : 1655686526173,
+          "stop" : 1655686526601,
+          "duration" : 428
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "{'method': 'POST', 'is_run': None, 'url': 'https://aecloud-test.glodon.com/identification/users/verify', 'detail': '正常登录', 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'account': 'zhuhy@ZHENGLJ', 'password': '123qwe!@#', 'tenantId': '', 'type': 'password', 'verifyCode': ''}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}, 'errorMsg': {'jsonpath': '$.errorMsg', 'type': '==', 'value': None, 'AssertType': None}, 'errorCode': {'jsonpath': '$.errorCode', 'type': '==', 'value': 0, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None, 'sleep': None, 'response_cache': None}" ]
+        "parameters" : [ "{'method': 'POST', 'is_run': None, 'url': 'https://aecloud-test.glodon.com/identification/users/verify', 'detail': '密码错误登录', 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'account': 'zhuhy@ZHENGLJ', 'password': '123', 'tenantId': '', 'type': 'password', 'verifyCode': ''}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'success': {'jsonpath': '$.success', 'type': '==', 'value': False, 'AssertType': None}, 'errorMsg': {'jsonpath': '$.errorMsg', 'type': '==', 'value': '账号或密码错误', 'AssertType': None}, 'errorCode': {'jsonpath': '$.errorCode', 'type': '==', 'value': 2110, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None, 'sleep': None, 'response_cache': None}" ]
+      }, {
+        "name" : "test_get_attendance_record[考勤台账管理员列表]",
+        "uid" : "9ce9d009656c3f50",
+        "parentUid" : "eee5d5f55e27ed1dca6087144f735f99",
+        "status" : "passed",
+        "time" : {
+          "start" : 1655686524983,
+          "stop" : 1655686525680,
+          "duration" : 697
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'method': 'POST', 'is_run': None, 'url': 'https://aecloud-test.glodon.com/linkapps/gateway-server/cloud-attendence-backend-api/attendanceRecord/adminSummary', 'detail': '考勤台账管理员列表', 'headers': {'token': 'work_login_init', 'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'asc': False, 'propName': None, 'belongDeptId': None, 'belongDeptName': None, 'userId': None, 'userName': None, 'attendanceDate': ['2022-06-01', '2022-06-30'], 'fromTime': '2022-06-01', 'toTime': '2022-06-30', 'currentPage': 1, 'pageSize': 10, 'attendanceResult': None, 'absenceStatus': None, 'lateStatus': None, 'leaveEarlyStatus': None, 'leaveStatus': None, 'missingClockStatus': None}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'ok': {'jsonpath': '$.ok', 'type': '==', 'value': True, 'AssertType': None}, 'code': {'jsonpath': '$.code', 'type': '==', 'value': '200', 'AssertType': None}, 'msg': {'jsonpath': '$.msg', 'type': '==', 'value': 'OK', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None, 'sleep': None, 'response_cache': None}" ]
       } ],
-      "uid" : "2ea1d3f92da5a0bb5efe064db1f37cfc"
+      "uid" : "eee5d5f55e27ed1dca6087144f735f99"
     } ],
-    "uid" : "b1ea9798be10aee5b051acc91c356a54"
+    "uid" : "8da92385be23ae15e1552ad013fbcf2e"
   } ]
 }
