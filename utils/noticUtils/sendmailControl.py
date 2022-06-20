@@ -73,7 +73,8 @@ class SendEmail(object):
             成  功   率: {} %
 
         {}
-
+        jenkins地址：http://localhost:8080/jenkins/job/pytest-gitee/
+        详细情况可登录jenkins平台查看，非相关负责人员可忽略此消息。谢谢。
         **********************************
         """.format(self.TOTAL, self.PASS, self.FAILED, self.BROKEN, self.SKIP, self.RATE, self.CaseDetail)
 
