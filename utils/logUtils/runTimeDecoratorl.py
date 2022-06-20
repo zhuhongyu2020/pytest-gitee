@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import time
 from utils.logUtils.logControl import ERROR
 
@@ -14,7 +17,7 @@ def execution_duration(number: int):
             def swapper(*args, **kwargs):
                 res = func(*args, **kwargs)
                 run_time = round(res['res_time'])
-                # 计算时间戳毫米级别，如果时间大于number，则打印 函数名称 和运行时间
+                # 计算时间戳毫秒级别，如果时间大于number，则打印 函数名称 和运行时间
                 if run_time > number:
                     ERROR.logger.error(
                         "\n=================================================================================\n"
@@ -22,7 +25,7 @@ def execution_duration(number: int):
                         "函数运行时间:{0} ms\n"
                         "测试用例相关数据: {1}\n"
                         "================================================================================="
-                        .format(run_time, res))
+                        .format(run_time, func(res)))
 
                 return res
 

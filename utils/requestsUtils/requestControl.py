@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import os
 import random
 import time
@@ -20,7 +22,6 @@ from utils.readFilesUtils.regularControl import cache_regular
 from utils.requestsUtils.set_current_request_cache import SetCurrentRequestCache
 from utils.cacheUtils.cacheControl import Cache
 from utils.logUtils.logControl import ERROR
-
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
