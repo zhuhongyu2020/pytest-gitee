@@ -18,7 +18,6 @@ sys.path.append("..")
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir)))
 
 
-
 def run():
     # 从配置文件中获取项目名称
     try:

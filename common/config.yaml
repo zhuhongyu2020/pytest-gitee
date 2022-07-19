@@ -47,7 +47,7 @@ email:
   email_host: smtp.163.com
   stamp_key: VIOILTUYHXAQFOEK
   # 收件人
-  send_list: zhuhongyu.2009@163.com
+  send_list: zhuhongyu.2009@163.com,jy-zhuhy@glodon.com,854871418@qq.com
 
 # 飞书通知
 FeiShuTalk:
